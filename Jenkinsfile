@@ -17,7 +17,7 @@ pipeline {
                 branch 'production'
             }
 	steps {
-                echo 'Deploying....'
+                echo 'Deploying production....'
             }
         }
         stage('Deploy master') {
@@ -25,7 +25,7 @@ pipeline {
                 branch 'master'
             }
 	steps {
-                echo 'Deploying....'
+                echo 'Deploying master....'
             }
     }
 }
