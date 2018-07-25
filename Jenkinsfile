@@ -27,5 +27,6 @@ pipeline {
 	steps {
                 echo 'Deploying master....'
             }
+	}
     }
 }
