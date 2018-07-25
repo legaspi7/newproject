@@ -20,12 +20,12 @@ pipeline {
                 echo 'Deploying production....'
             }
         }
-        stage('DeployMaster') {
+        stage('DeployDevelop') {
 	when {
-                branch 'master'
+                branch 'develop'
             }
 	steps {
-                echo 'Deploying master....'
+                echo 'Deploying develop....'
             }
 	}
     }
