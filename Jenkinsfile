@@ -12,7 +12,7 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
+        stage('Deploy prod') {
 	when {
                 branch 'production'
             }
@@ -20,7 +20,7 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('Deploy') {
+        stage('Deploy master') {
 	when {
                 branch 'master'
             }
